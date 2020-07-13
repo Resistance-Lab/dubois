@@ -1,0 +1,7 @@
+<ul>
+  {% for page in site.navigation %}
+    <li {% if page.url == "/{{page.path}}.html" %}class="active"{% endif %}>
+      <a href="/{{ page.path }}">{{ page.title }}</a>
+    </li>
+  {% endfor %}
+</ul>

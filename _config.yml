@@ -1,0 +1,52 @@
+# paginate: 5
+# paginate_path: "/our-work/page:num/"
+theme: dubois
+kramdown:
+  parse_block_html: true
+plugins:
+  - jekyll-paginate
+  - jekyll-autoprefixer
+
+site_name: Resistance Lab
+site_description: Collective against state violence
+
+theme_primary_colour: "#C1272D"
+theme_secondary_colour: "#000000"
+
+contact_email: info@resistancelab.network
+contact_twitter: ResLabMcr
+contact_instagram: ResLabMcr
+contact_github: Resistance_Lab
+
+google_analytics:
+
+members:
+  -
+    name: Geeks for Social Change
+    url: https://gfsc.studio
+    logo: gfsc.svg
+  -
+    name: Northern Police Monitoring Project
+    url: http://npolicemonitor.co.uk
+    logo: npmp.svg
+  -
+    name: Kids of Colour
+    url: https://kidsofcolour.com
+    logo: koc.svg
+  -
+    name: The African Pot Project
+    url: https://tapproject.co.uk
+  -
+    name: Race, Roots & Resistance
+    url: https://www.racerootsresist.com
+  -
+    name: Sites of Resistance
+    url: https://sitesofresistance.org/
+
+navigation:
+  - title: Home
+    path:
+  - title: Article
+    path: article
+  - title: Add links in config.yml
+    path: 
