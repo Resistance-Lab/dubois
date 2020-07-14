@@ -22,7 +22,7 @@
               {% include logo.html %}
             </div>
           </a>
-          <button class="header__toggle nav__toggle" id="js-toggle">
+          <button class="header__toggle nav__toggle" id="js-toggle" aria-label="Toggle navigation">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 25 23">
               <g transform="translate(-364 -126)">
                 <rect width="25" height="5" transform="translate(364 126)" />
@@ -39,7 +39,7 @@
     </div>
   </header>
 
-  <main class="main">
+  <main class="main bg" id="js-bg">
     <article class="page page--{{ page.layout }}">
       <header>
         {% if page.title_fancy %}
@@ -96,6 +96,6 @@
     </div>
   </footer>
 
-  <script src="/assets/js/main.js"></script>
+  {% include scripts.html %}
 </body>
 </html>

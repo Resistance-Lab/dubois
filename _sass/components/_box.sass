@@ -1,5 +1,5 @@
 .box
-  background-color: $tertiary
+  background-color: $tertiary-trans
   padding: 0 1rem
   .content
     padding-bottom: 1rem
@@ -17,24 +17,26 @@
     h2
       margin-left: -2rem
 
-  &:nth-of-type(4n + 1)
+  &--auto:nth-of-type(4n + 1), &--white
     border: 1px solid $primary
     h2
       background-color: $primary
       color: $tertiary
       border-color: $secondary
-  &:nth-of-type(4n + 2), &:nth-of-type(4n + 4)
+  &--auto:nth-of-type(4n + 2), &--auto:nth-of-type(4n + 4),  &--red
     background-color: $primary
     color: $tertiary
+    border: 1px solid $secondary
     h2
       background-color: $secondary
       color: $tertiary
       border-color: $secondary
     a
       color: $tertiary
-  &:nth-of-type(4n + 3)
+  &--auto:nth-of-type(4n + 3), &--black
     background-color: $secondary
     color: $tertiary
+    border: 1px solid $primary
     h2
       background-color: $tertiary
       color: $secondary

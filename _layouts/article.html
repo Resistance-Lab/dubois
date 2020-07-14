@@ -3,5 +3,11 @@ layout: default
 ---
 
 <div class="article">
+  {% if page.date %}
+    <p class="article__date">
+      <strong>Published {{ page.date | date: "%-d %B %Y" }}</strong>
+    </p>
+  {% endif %}
+
   {{ content }}
 </div>

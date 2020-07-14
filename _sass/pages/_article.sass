@@ -7,8 +7,8 @@ $page-margin: 10%
 
 .article
   border: 1px solid $secondary
-  background-color: $tertiary
-  padding: 0rem $article-padding-phone
+  background-color: $tertiary-trans
+  padding: 0rem $article-padding-phone 2rem
   font-family: $articles
   h2
     padding-top: 1rem
@@ -26,15 +26,19 @@ $page-margin: 10%
     ol, ul
       padding-left: 2rem
   +for-desktop-up
-    padding: 1rem $article-padding-desktop
+    padding: 1rem $article-padding-desktop 2rem
   +for-big-desktop-up
-    padding: 1rem $article-padding-big-desktop
+    padding: 1rem $article-padding-big-desktop 2rem
 
   img
     max-width: 100%
 
   blockquote
     margin: 1rem 1rem
+
+  &__date
+    color: $primary
+    margin-bottom: 2rem
 
   .image
     border-width: 1px 0px

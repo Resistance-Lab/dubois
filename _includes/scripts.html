@@ -1,0 +1,58 @@
+<script>
+  // Navigation toggle
+  const toggle = document.getElementById('js-toggle')
+  const nav = document.getElementById('js-nav')
+
+  toggle.addEventListener('click', function(e) {
+    e.preventDefault();
+    nav.classList.toggle('expanded');
+  });
+
+  // Background image shuffle
+  function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+
+      // And swap it with the current element.
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+
+    return array;
+  }
+
+  // Element to randomize
+  const bgEle = document.getElementById('js-bg');
+
+  // All the images we have
+  const bgImages = [
+    'bars.png',
+    'baton.png',
+    'car.png',
+    'gavel.png',
+    'handcuffs.png',
+    'hat.png',
+    'helmet.png',
+    'job.png',
+    'riot.png',
+    'taser.png',
+    'visa.png'
+  ];
+
+  // Format a string that can go into the CSS
+  const bgImageStr = shuffle(bgImages)
+                            .map((value) => {
+                              return `url('/assets/images/bg/${value}')`
+                            })
+                            .join(', ');
+
+  // Set it
+  bgEle.style['background-image'] = bgImageStr;
+</script>

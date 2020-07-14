@@ -1,0 +1,28 @@
+.bg {
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-image:
+    url('/assets/images/bg/bars.png'),
+    url('/assets/images/bg/baton.png'),
+    url('/assets/images/bg/car.png'),
+    url('/assets/images/bg/gavel.png'),
+    url('/assets/images/bg/handcuffs.png'),
+    url('/assets/images/bg/hat.png'),
+    url('/assets/images/bg/helmet.png'),
+    url('/assets/images/bg/job.png'),
+    url('/assets/images/bg/riot.png'),
+    url('/assets/images/bg/taser.png'),
+    url('/assets/images/bg/visa.png');
+  background-position:
+    top 5rem left,
+    top 25rem right 5%,
+    top 45rem left 5%,
+    top 65rem right 5%,
+    top 85rem left 5%,
+    top 105rem right 5%,
+    top 125rem left 5%,
+    top 145rem right 5%,
+    top 165rem left 5%,
+    top 185rem right 5%,
+    top 205rem left 5%;
+}

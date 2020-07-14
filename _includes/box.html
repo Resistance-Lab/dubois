@@ -1,2 +1,2 @@
-<div class="box box--{{ include.colour }} grid__item">
+<div class="box box--{% if include.colour %}{{ include.colour }}{% else %}auto{% endif %} grid__item">
   <div class="content" markdown="1">
