@@ -1,6 +1,5 @@
 .bg {
   background-repeat: no-repeat;
-  background-size: 25%;
   background-image:
     url('/assets/images/bg/bars.png'),
     url('/assets/images/bg/baton.png'),
@@ -13,16 +12,62 @@
     url('/assets/images/bg/riot.png'),
     url('/assets/images/bg/taser.png'),
     url('/assets/images/bg/visa.png');
+  background-size: 90%;
   background-position:
-    top 5rem left,
-    top 25rem right 5%,
-    top 45rem left 5%,
-    top 65rem right 5%,
-    top 85rem left 5%,
-    top 105rem right 5%,
-    top 125rem left 5%,
-    top 145rem right 5%,
-    top 165rem left 5%,
-    top 185rem right 5%,
-    top 205rem left 5%;
+    top 15rem left 50%,
+    top 45rem left 50%,
+    top 75rem left 50%,
+    top 105rem left 50%,
+    top 135rem left 50%,
+    top 165rem left 50%,
+    top 195rem left 50%,
+    top 225rem left 50%,
+    top 255rem left 50%,
+    top 285rem left 50%,
+    top 315rem left 50%;
+  @include for-tablet-portrait-up {
+    background-size: 40%;
+    background-position:
+      top 5rem left 1%,
+      top 30rem right 1%,
+      top 55rem left 1%,
+      top 80rem right 1%,
+      top 105rem left 1%,
+      top 130rem right 1%,
+      top 155rem left 1%,
+      top 180rem right 1%,
+      top 205rem left 1%,
+      top 230rem right 1%,
+      top 255rem left 1%;
+    }
+  @include for-tablet-landscape-up {
+    background-size: 25%;
+    background-position:
+      top 5rem left 5%,
+      top 25rem right 5%,
+      top 45rem left 5%,
+      top 65rem right 5%,
+      top 85rem left 5%,
+      top 105rem right 5%,
+      top 125rem left 5%,
+      top 145rem right 5%,
+      top 165rem left 5%,
+      top 185rem right 5%,
+      top 205rem left 5%;
+    }
+  @include for-desktop-up {
+    background-size: 25%;
+    background-position:
+      top 4rem left 10%,
+      top 25rem right 10%,
+      top 45rem left 10%,
+      top 65rem right 10%,
+      top 85rem left 10%,
+      top 105rem right 10%,
+      top 125rem left 10%,
+      top 145rem right 10%,
+      top 165rem left 10%,
+      top 185rem right 10%,
+      top 205rem left 10%;
+    }
 }
