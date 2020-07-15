@@ -14,6 +14,10 @@
     grid-template-columns: repeat(4, 1fr)
 
 .member
+  display: grid
+  grid-template-columns: 1fr
+  justify-content: center
+  align-items: center
   &__name
     text-indent: -9999px
     line-height: 0
@@ -21,3 +25,5 @@
     max-width: 100%
     fill
       color: $footer-copy
+    path
+      stroke: $footer-copy
