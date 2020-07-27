@@ -1,18 +1,17 @@
 .bg {
   background-repeat: no-repeat;
   background-image:
-    url('/assets/images/bg/bars.png'),
-    url('/assets/images/bg/baton.png'),
-    url('/assets/images/bg/car.png'),
-    url('/assets/images/bg/gavel.png'),
-    url('/assets/images/bg/handcuffs.png'),
-    url('/assets/images/bg/hat.png'),
-    url('/assets/images/bg/helmet.png'),
-    url('/assets/images/bg/job.png'),
-    url('/assets/images/bg/riot.png'),
-    url('/assets/images/bg/taser.png'),
-    url('/assets/images/bg/visa.png');
-  background-size: 90%;
+    url('/assets/images/bg/bars.jpg'),
+    url('/assets/images/bg/baton.jpg'),
+    url('/assets/images/bg/gavel.jpg'),
+    url('/assets/images/bg/handcuffs.jpg'),
+    url('/assets/images/bg/hat.jpg'),
+    url('/assets/images/bg/helmet.jpg'),
+    url('/assets/images/bg/job.jpg'),
+    url('/assets/images/bg/riot.jpg'),
+    url('/assets/images/bg/taser.jpg'),
+    url('/assets/images/bg/visa.jpg');
+  background-size: 100%;
   background-position:
     top 15rem left 50%,
     top 45rem left 50%,
@@ -23,51 +22,61 @@
     top 195rem left 50%,
     top 225rem left 50%,
     top 255rem left 50%,
-    top 285rem left 50%,
-    top 315rem left 50%;
+    top 285rem left 50%;
   @include for-tablet-portrait-up {
-    background-size: 40%;
+    background-size: 60%;
     background-position:
-      top 5rem left 1%,
-      top 30rem right 1%,
-      top 55rem left 1%,
-      top 80rem right 1%,
-      top 105rem left 1%,
-      top 130rem right 1%,
-      top 155rem left 1%,
-      top 180rem right 1%,
-      top 205rem left 1%,
-      top 230rem right 1%,
-      top 255rem left 1%;
+      top 5rem left -22%,
+      top 30rem right -22%,
+      top 55rem left -22%,
+      top 80rem right -22%,
+      top 105rem left -22%,
+      top 130rem right -22%,
+      top 155rem left -22%,
+      top 180rem right -22%,
+      top 205rem left -22%,
+      top 230rem right -22%;
     }
   @include for-tablet-landscape-up {
-    background-size: 25%;
+    background-size: 50%;
     background-position:
-      top 5rem left 5%,
-      top 25rem right 5%,
-      top 45rem left 5%,
-      top 65rem right 5%,
-      top 85rem left 5%,
-      top 105rem right 5%,
-      top 125rem left 5%,
-      top 145rem right 5%,
-      top 165rem left 5%,
-      top 185rem right 5%,
-      top 205rem left 5%;
+      top 1rem left -20%,
+      top 25rem right -20%,
+      top 45rem left -20%,
+      top 65rem right -20%,
+      top 85rem left -20%,
+      top 105rem right -20%,
+      top 125rem left -20%,
+      top 145rem right -20%,
+      top 165rem left -20%,
+      top 185rem right -20%;
     }
   @include for-desktop-up {
-    background-size: 25%;
+    background-size: 40%;
     background-position:
-      top 4rem left 10%,
-      top 25rem right 10%,
-      top 45rem left 10%,
-      top 65rem right 10%,
-      top 85rem left 10%,
-      top 105rem right 10%,
-      top 125rem left 10%,
-      top 145rem right 10%,
-      top 165rem left 10%,
-      top 185rem right 10%,
-      top 205rem left 10%;
+      top 0rem left -10%,
+      top 20rem right -10%,
+      top 40rem left -10%,
+      top 60rem right -10%,
+      top 80rem left -10%,
+      top 100rem right -10%,
+      top 120rem left -10%,
+      top 140rem right -10%,
+      top 160rem left -10%,
+      top 180rem right -10%;
+    }
+  @include for-big-desktop-up {
+    background-size: 600px;
+    background-position:
+      top 0rem left calc(50% - 600px),
+      top 20rem right calc(50% - 600px),
+      top 40rem left calc(50% - 600px),
+      top 60rem right calc(50% - 600px),
+      top 80rem left calc(50% - 600px),
+      top 100rem right calc(50% - 600px),
+      top 120rem left calc(50% - 600px),
+      top 140rem right calc(50% - 600px),
+      top 160rem left calc(50% - 600px),
+      top 180rem right calc(50% - 600px);
     }
 }
