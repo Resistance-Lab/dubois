@@ -1,10 +1,11 @@
 <!-- Favicons -->
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/social/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/social/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/social/favicon-16x16.png">
+<link rel="manifest" href="/assets/social/site.webmanifest">
+<link rel="mask-icon" href="/assets/social/safari-pinned-tab.svg" color="#000000">
 <meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-config" content="/assets/social/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
 
 <!-- Open Graph -->
@@ -33,13 +34,13 @@
 {%- if page.social-image-square %}
 <meta property="og:image" content="{{ site.url }}/assets/images/{{ page.social-image-square }}">
 {% else %}
-<meta property="og:image" content="{{ site.url }}/og-image.jpg">
+<meta property="og:image" content="{{ site.url }}/assets/social/og.png">
 {% endif %}
 
 {%- if page.social-image-wide %}
 <meta name="twitter:image" content="{{ site.url }}/assets/images/{{ page.social-image-wide }}">
 {% else %}
-<meta name="twitter:image" content="{{ site.url }}/og-image-2_1.png">
+<meta name="twitter:image" content="{{ site.url }}/assets/social/og.png">
 {% endif %}
 
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
