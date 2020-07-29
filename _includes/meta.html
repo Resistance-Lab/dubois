@@ -32,12 +32,12 @@
 {% endif %}
 
 {%- if page.social-image %}
-<meta property="og:image" content="{{ site.url }}/assets/images/{{ page.social-image }}">
+<meta property="og:image" content="https://resistancelab.network/assets/images/{{ page.social-image }}">
 <meta name="twitter:card" content="summary_large_image">
 {% else %}
-<meta property="og:image" content="{{ site.url }}/assets/social/og.png">
+<meta property="og:image" content="https://resistancelab.network/assets/social/og.png">
 {% endif %}
 
-<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:url" content="https://resistancelab.network{{ page.url }}">
 <meta name="twitter:site" content="@{{ site.contact_twitter }}">
 <meta name="twitter:creator" content="@{{ site.contact_twitter }}">
