@@ -5,6 +5,8 @@ $article-padding-desktop: 5rem
 $article-padding-big-desktop: 7rem
 $page-margin: 10%
 
+$half-width: 47.5%
+
 .article
   border: 1px solid $secondary
   background-color: $tertiary-trans
@@ -36,6 +38,9 @@ $page-margin: 10%
   blockquote
     margin: 1rem 1rem
 
+  a[href^="#"]
+    font-weight: normal
+
   &__date
     color: $primary
     margin-bottom: 2rem
@@ -46,7 +51,12 @@ $page-margin: 10%
     border-color: $primary
     margin-top: 1rem
     margin-bottom: 1rem
-    box-shadow: 0 0 15px $footer-copy
+    // box-shadow: 0 0 5px $caption-copy
+    &--left, &--right
+      clear: both
+    &--smaller
+      +for-tablet-portrait-up
+        width: 50%
     &--full, &--left, &--right
       margin-left: -$margin-phone - $article-padding-phone
       margin-right: -$margin-phone - $article-padding-phone
@@ -75,12 +85,12 @@ $page-margin: 10%
         margin-right: -$margin-desktop
         max-width: calc(100% + (#{$margin-desktop} * 2))
       &--left
-        max-width: calc(50% + #{$margin-desktop})
+        max-width: calc(#{$half-width} + #{$margin-desktop})
         margin-left: -$margin-desktop
         margin-right: 2rem
         float: left
       &--right
-        max-width: calc(50% + #{$margin-desktop})
+        max-width: calc(#{$half-width} + #{$margin-desktop})
         margin-left: 2rem
         margin-right: -$margin-desktop
         float: right
@@ -90,15 +100,16 @@ $page-margin: 10%
         margin-right: -$article-padding-big-desktop * 1.5
         max-width: calc(100% + #{$article-padding-big-desktop * 3})
       &--left
-        max-width: calc(50% + #{$article-padding-big-desktop * 1.5})
+        max-width: calc(#{$half-width} + #{$article-padding-big-desktop * 1.5})
         margin-left: -$article-padding-big-desktop * 1.5
         margin-right: 3rem
         float: left
       &--right
-        max-width: calc(50% + #{$article-padding-big-desktop * 1.5})
+        max-width: calc(#{$half-width} + #{$article-padding-big-desktop * 1.5})
         margin-left: 3rem
         margin-right: -$article-padding-big-desktop * 1.5
         float: right
+
 
   .pullquote
     font-size: 2rem
@@ -113,3 +124,13 @@ $page-margin: 10%
       content: "”"
     +for-tablet-portrait-up
       font-size: 2.5rem
+
+  .image--graph
+    padding: 0 0.5rem 1rem
+    +for-tablet-portrait-up
+      padding: 0 2rem
+    h4
+      margin-bottom: 0
+    figcaption
+      padding-left: 0
+      padding-bottom: 0

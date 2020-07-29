@@ -10,6 +10,11 @@
     margin: -1rem 15% 0 0
     border-width: 1px
     border-style: solid
+    a
+      text-decoration: none
+      font-weight: 450
+      &:hover
+        text-decoration: underline
   h2 + *
     padding-top: 1rem
 
@@ -23,6 +28,8 @@
       background-color: $primary
       color: $tertiary
       border-color: $secondary
+      a
+        color: $tertiary
   &--auto:nth-of-type(4n + 2), &--auto:nth-of-type(4n + 4),  &--red
     background-color: $primary
     color: $tertiary
@@ -31,6 +38,8 @@
       background-color: $secondary
       color: $tertiary
       border-color: $secondary
+      a
+        color: $tertiary
     a
       color: $tertiary
   &--auto:nth-of-type(4n + 3), &--black
@@ -41,5 +50,7 @@
       background-color: $tertiary
       color: $secondary
       border-color: $secondary
+      a
+        color: $secondary
     a
       color: $tertiary

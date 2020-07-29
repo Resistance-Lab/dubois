@@ -31,20 +31,13 @@
 <meta property="og:description" content="{{ site.site_description }}">
 {% endif %}
 
-{%- if page.social-image-square %}
-<meta property="og:image" content="{{ site.url }}/assets/images/{{ page.social-image-square }}">
+{%- if page.social-image %}
+<meta property="og:image" content="{{ site.url }}/assets/images/{{ page.social-image }}">
+<meta name="twitter:card" content="summary_large_image">
 {% else %}
 <meta property="og:image" content="{{ site.url }}/assets/social/og.png">
 {% endif %}
 
-{%- if page.social-image-wide %}
-<meta name="twitter:image" content="{{ site.url }}/assets/images/{{ page.social-image-wide }}">
-{% else %}
-<meta name="twitter:image" content="{{ site.url }}/assets/social/og.png">
-{% endif %}
-
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-
-<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@{{ site.contact_twitter }}">
 <meta name="twitter:creator" content="@{{ site.contact_twitter }}">
