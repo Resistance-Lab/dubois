@@ -18,4 +18,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 12.0"
   spec.add_development_dependency "jekyll-paginate"
   spec.add_development_dependency "jekyll-autoprefixer"
+  spec.add_development_dependency "kramdown-parser-gfm"
 end
