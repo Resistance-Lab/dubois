@@ -5,7 +5,6 @@ kramdown:
   parse_block_html: true
 plugins:
   - jekyll-paginate
-  - jekyll-autoprefixer
 
 site_name: Resistance Lab
 site_description: Collective against state violence
